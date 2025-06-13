@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749853082889,
+  "lastUpdate": 1749853743009,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -25,6 +25,42 @@ window.BENCHMARK_DATA = {
         "date": 1749853082651,
         "tool": "cargo",
         "benches": [
+          {
+            "name": "fib 20",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "245b9ea284ea383cddc56f468b6c9bb5ef9b0e48",
+          "message": "add another bench to test",
+          "timestamp": "2025-06-13T16:26:29-06:00",
+          "tree_id": "232e2717bfa5d780e5a6a1eec94477fb1151d1ae",
+          "url": "https://github.com/brycemines/testing-things/commit/245b9ea284ea383cddc56f468b6c9bb5ef9b0e48"
+        },
+        "date": 1749853742286,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 6,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
           {
             "name": "fib 20",
             "value": 3,
