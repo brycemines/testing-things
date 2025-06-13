@@ -11,3 +11,7 @@ criterion = "0.6.0"
 [[bench]]
 name = "test_bench"
 harness = false
+
+[[bench]]
+name = "another_bench"
+harness = false
