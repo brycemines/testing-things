@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749854313476,
+  "lastUpdate": 1749855513954,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -97,6 +97,42 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 11899,
             "range": "± 28",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "126987327+brycemines@users.noreply.github.com",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80dfaed477d7494b6cbc4da8a3fee1f3098a96e6",
+          "message": "Merge pull request #1 from brycemines/performance-hit\n\nmade fib run worse",
+          "timestamp": "2025-06-13T16:56:42-06:00",
+          "tree_id": "a94c655b4bbd384490db8bbac47bc2ef1d8f82d9",
+          "url": "https://github.com/brycemines/testing-things/commit/80dfaed477d7494b6cbc4da8a3fee1f3098a96e6"
+        },
+        "date": 1749855513619,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 216721157,
+            "range": "± 9163320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11901,
+            "range": "± 111",
             "unit": "ns/iter"
           }
         ]
