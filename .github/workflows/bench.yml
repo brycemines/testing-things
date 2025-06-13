@@ -35,6 +35,5 @@ jobs:
           alert-threshold: '200%'
           comment-on-alert: true
           fail-on-alert: true
-          # Mention @rhysd in the commit comment
           alert-comment-cc-users: '@brycemines'
 
