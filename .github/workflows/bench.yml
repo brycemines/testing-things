@@ -1,11 +1,10 @@
-name: Test rust minimal setup
+name: Rust Benchmark
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: [main]
+    paths-ignore:
+        - "docs/**"
+        - "**.md"
 
 permissions:
     contents: write
@@ -13,25 +12,20 @@ permissions:
 
 jobs:
   benchmark:
-    name: Performance regression check
+    name: Rust Performance Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Rust
-        run: |
-          rustup update && rustup default 
-          cargo install cargo-criterion
-      - name: Run benchmark
+      - name: Install cargo-criterion
+        run: cargo install cargo-criterion
+      - name: Run benchmark with criterion
         run: cargo criterion --output-format bencher --benches 2>&1 | tee output.txt
 
-      # Run `github-action-benchmark` action
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: test benchmark
-          # What benchmark tool the output.txt came from
+          name: Rust Benchmark
           tool: 'cargo'
-          # Where the output from the benchmark tool is stored
           output-file-path: output.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
