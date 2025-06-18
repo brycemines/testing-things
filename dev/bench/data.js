@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749856337612,
+  "lastUpdate": 1750264562210,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -153,6 +153,44 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/brycemines/testing-things/pull/2/commits/8d2ba1b4c6ff0ee964f9a741254f1d04401a6284"
         },
         "date": 1749856337058,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 11,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 10,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "Rust Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "126987327+brycemines@users.noreply.github.com",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "370749f442ce9374b4b47b19fe3fda42adcbce9b",
+          "message": "Merge pull request #2 from brycemines/performance-hit\n\nslightly better fib",
+          "timestamp": "2025-06-18T10:34:22-06:00",
+          "tree_id": "47a673ed82e7292670a6aa19683a8da649ecd03a",
+          "url": "https://github.com/brycemines/testing-things/commit/370749f442ce9374b4b47b19fe3fda42adcbce9b"
+        },
+        "date": 1750264561432,
         "tool": "cargo",
         "benches": [
           {
