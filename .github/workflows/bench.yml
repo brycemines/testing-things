@@ -19,6 +19,7 @@ jobs:
       - name: Install cargo-criterion
         run: cargo install cargo-criterion
       - name: Run benchmark with criterion
+        working-directory: ./rust
         run: cargo criterion --output-format bencher --benches 2>&1 | tee output.txt
 
       - name: Store benchmark result
@@ -26,7 +27,7 @@ jobs:
         with:
           name: Rust Benchmark
           tool: 'cargo'
-          output-file-path: output.txt
+          output-file-path: rust/output.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'
