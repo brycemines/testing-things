@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+kdam = "0.6.3"
 
 [dev-dependencies]
 criterion = "0.6.0"
@@ -14,4 +15,8 @@ harness = false
 
 [[bench]]
 name = "another_bench"
+harness = false
+
+[[bench]]
+name = "third_bench"
 harness = false
