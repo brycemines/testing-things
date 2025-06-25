@@ -14,7 +14,7 @@ use criterion::{Criterion, criterion_group, criterion_main};
 use std::hint::black_box;
 
 fn criterion_benchmark(c: &mut Criterion) {
-    c.bench_function("kdam progress bar", |b| b.iter(|| black_box(thing(vec!["a", "b", "c", "d"]))));
+    c.bench_function("kdam progress bar", |b| b.iter(|| black_box(thing(vec!["a", "b", "c", "d", "e", "f"]))));
 }
 
 criterion_group!(benches, criterion_benchmark);
