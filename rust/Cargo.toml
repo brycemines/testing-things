@@ -20,3 +20,11 @@ harness = false
 [[bench]]
 name = "third_bench"
 harness = false
+
+[lib]
+bench = false
+
+[[bin]]
+name = "testing-things"
+path = "src/main.rs"
+bench = false
