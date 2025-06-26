@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750871314960,
+  "lastUpdate": 1750957551019,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -383,6 +383,48 @@ window.BENCHMARK_DATA = {
             "name": "fib 20",
             "value": 11896,
             "range": "± 32",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "772b9f1bf316f795bab3dd2f991a8daa64602ea6",
+          "message": "found a fix finally",
+          "timestamp": "2025-06-26T11:03:49-06:00",
+          "tree_id": "31de48b7614d4aebad357c797ab2beae59a0a688",
+          "url": "https://github.com/brycemines/testing-things/commit/772b9f1bf316f795bab3dd2f991a8daa64602ea6"
+        },
+        "date": 1750957550499,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 180268753,
+            "range": "± 3948209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11901,
+            "range": "± 37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "kdam progress bar",
+            "value": 13676,
+            "range": "± 1254",
             "unit": "ns/iter"
           }
         ]
