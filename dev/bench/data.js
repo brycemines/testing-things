@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750957551019,
+  "lastUpdate": 1753218887019,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -425,6 +425,132 @@ window.BENCHMARK_DATA = {
             "name": "kdam progress bar",
             "value": 13676,
             "range": "± 1254",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "278dfdac2c15deb2d44736cfc44c421fa4bd89a7",
+          "message": "fix: previous test did not write the benchmarking results",
+          "timestamp": "2025-07-22T12:01:07-06:00",
+          "tree_id": "f05447c2d88052554c5cbb531ebe82c7544f7bdc",
+          "url": "https://github.com/brycemines/testing-things/commit/278dfdac2c15deb2d44736cfc44c421fa4bd89a7"
+        },
+        "date": 1753207386327,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 216579057,
+            "range": "± 8688801",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11897,
+            "range": "± 15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "kdam progress bar",
+            "value": 15148,
+            "range": "± 2177",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "05d73ccb89f3342c63b0bcaa51a2d22e20eb38dd",
+          "message": "test: create a github pages deploying action",
+          "timestamp": "2025-07-22T15:03:17-06:00",
+          "tree_id": "351ba94a61cb4fc4521b0a1fe5d35e0dc7003cb1",
+          "url": "https://github.com/brycemines/testing-things/commit/05d73ccb89f3342c63b0bcaa51a2d22e20eb38dd"
+        },
+        "date": 1753218314425,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 180268665,
+            "range": "± 918967",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11902,
+            "range": "± 87",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "kdam progress bar",
+            "value": 14465,
+            "range": "± 2212",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "7fbd6344967171d553c56bd4295e3976861434c4",
+          "message": "fix: attempt to fix the previous bug",
+          "timestamp": "2025-07-22T15:12:16-06:00",
+          "tree_id": "ca19816d857747417afd5a341ec64c3cb49ab9e8",
+          "url": "https://github.com/brycemines/testing-things/commit/7fbd6344967171d553c56bd4295e3976861434c4"
+        },
+        "date": 1753218886563,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 180170724,
+            "range": "± 949759",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11898,
+            "range": "± 178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "kdam progress bar",
+            "value": 14936,
+            "range": "± 1688",
             "unit": "ns/iter"
           }
         ]
