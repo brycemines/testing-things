@@ -17,10 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Copy benchmark results
-        run: |
-            git checkout bench dev/bench
-            mv dev ./docs/_build/html
+      - name: Checkout benchmark results
+        uses: actions/checkout@v4
+        with:
+            ref: bench
+            path: bench_checkout
+
+      - name: Move benchmark results to built folder
+        run: mv bench_checkout/dev ./docs/_build/html
 
       # Push the book's HTML to github-pages
       - name: GitHub Pages action
