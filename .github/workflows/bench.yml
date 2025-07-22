@@ -24,8 +24,7 @@ jobs:
           name: Rust Benchmark
           tool: 'cargo'
           output-file-path: rust/output.txt
-          gh-pages-branch: main
-          benchmark-data-dir-path: docs/dev/bench
+          gh-pages-branch: bench
           github-token: ${{ secrets.GITHUB_TOKEN }}
           alert-threshold: '200%'
           comment-on-alert: true
