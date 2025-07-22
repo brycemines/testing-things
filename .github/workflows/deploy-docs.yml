@@ -11,6 +11,8 @@ on:
 jobs:
   deploy-docs:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
     defaults:
       run:
         shell: bash -el {0}
