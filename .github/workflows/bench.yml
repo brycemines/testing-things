@@ -8,7 +8,6 @@ on:
 
 permissions:
     contents: write
-    deployments: write
 
 jobs:
   benchmark:
@@ -25,6 +24,8 @@ jobs:
           name: Rust Benchmark
           tool: 'cargo'
           output-file-path: rust/output.txt
+          gh-pages-branch: main
+          benchmark-data-dir-path: docs/dev/bench
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'
