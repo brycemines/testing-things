@@ -26,6 +26,7 @@ jobs:
           output-file-path: rust/output.txt
           gh-pages-branch: bench
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
           alert-threshold: '200%'
           comment-on-alert: true
           fail-on-alert: true
