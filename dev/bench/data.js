@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753207386668,
+  "lastUpdate": 1753218314763,
   "repoUrl": "https://github.com/brycemines/testing-things",
   "entries": {
     "test benchmark": [
@@ -467,6 +467,48 @@ window.BENCHMARK_DATA = {
             "name": "kdam progress bar",
             "value": 15148,
             "range": "± 2177",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "committer": {
+            "email": "bryceirving@mines.edu",
+            "name": "brycemines",
+            "username": "brycemines"
+          },
+          "distinct": true,
+          "id": "05d73ccb89f3342c63b0bcaa51a2d22e20eb38dd",
+          "message": "test: create a github pages deploying action",
+          "timestamp": "2025-07-22T15:03:17-06:00",
+          "tree_id": "351ba94a61cb4fc4521b0a1fe5d35e0dc7003cb1",
+          "url": "https://github.com/brycemines/testing-things/commit/05d73ccb89f3342c63b0bcaa51a2d22e20eb38dd"
+        },
+        "date": 1753218314425,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "fib 40",
+            "value": 180268665,
+            "range": "± 918967",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fib 20",
+            "value": 11902,
+            "range": "± 87",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "kdam progress bar",
+            "value": 14465,
+            "range": "± 2212",
             "unit": "ns/iter"
           }
         ]
